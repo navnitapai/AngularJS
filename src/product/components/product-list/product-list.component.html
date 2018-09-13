@@ -1,0 +1,21 @@
+
+<!--(function(angular){
+    angular.module('myapp.product')
+    .component('productList', {
+        templateUrl : 'src/product/components/product-list/product-list.component.html',
+        controller : function(ProductService){
+            var promise = ProductService.getProducts();
+            promise.then(fucntion(products){
+                this.products = products;
+            })
+        }
+    })
+})(angular);-->
+
+
+
+<div>
+    Product list page
+    {{$ctrl.list}}
+
+</div>
